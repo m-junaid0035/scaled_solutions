@@ -1,0 +1,248 @@
+/* ========== Global Section Layout Consistency ========== */
+.section-wrapper {
+  width: 100%;
+  max-width: 1400px; /* keeps consistent layout width */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 0; /* ensures padding handled by section */
+}
+
+.left-column,
+.strategy-left {
+  flex: 0 0 65%;
+}
+
+.right-column,
+.strategy-right {
+  flex: 0 0 35%;
+}
+
+
+
+
+/* ========== Services Page Styles ========== */
+
+.services-hero {
+  background-color: #0B1C23; /* dark teal background */
+  color: white;
+  /* min-height: 100vh; */
+  padding: 6rem 8%;
+  /* font-family: "Inter", sans-serif; */
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+/* -------- Left Column -------- */
+.left-column {
+  flex: 0 0 65%;
+}
+
+.top-line {
+  width: 100%;
+  height: 1px;
+  background-color: #198190;
+  margin-bottom: 2rem;
+}
+
+.left-column h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #d6f0f2;
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  color: #198190; /* teal highlight */
+}
+
+.cta-btn {
+  background-color: #198190;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 9999px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 3rem;
+}
+
+.cta-btn:hover {
+  background-color: #198190;
+}
+
+/* -------- Video -------- */
+.video-box {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2rem;
+}
+
+.services-video {
+  width: 80%;
+  max-width: 650px;
+  border: 1px solid #198190;
+  border-radius: 8px;
+  padding: 8px;
+  background-color: transparent;
+}
+
+/* -------- Right Column -------- */
+.right-column {
+  flex: 0 0 35%;
+}
+
+.section-label {
+  color: #198190;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  margin-top: -10px;
+}
+
+.right-column p {
+  color: #b8c4c6;
+  line-height: 1.7;
+  font-size: 1rem;
+  max-width: 350px;
+}
+
+/* -------- Responsive -------- */
+@media (max-width: 1000px) {
+  .services-container {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    flex: 1 1 100%;
+  }
+
+  .left-column h1 {
+    font-size: 2.2rem;
+  }
+
+  .services-video {
+    width: 100%;
+  }
+
+  .right-column p {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* ========== Cloud Strategy & Advisory Section ========== */
+
+.strategy-section {
+  background-color: #0B1C23;
+  padding: 3rem 8% 6rem; /* top reduced to 3rem, bottom remains 6rem */
+  color: white;
+}
+
+/* Section Heading (above columns) */
+.section-heading {
+  margin-bottom: 3rem;
+}
+
+.section-heading h2 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #d6f0f2;
+}
+
+.section-heading .highlight {
+  color: #198190;
+}
+
+/* Two-column layout */
+.strategy-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+/* Left Column */
+.strategy-left {
+  flex: 0 0 65%;
+}
+
+.strategy-left ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  padding-right: 8rem;
+  color: #b8c4c6;
+  line-height: 1.9;
+  font-size: 1.05rem; /* slightly larger for readability */
+}
+
+.strategy-left li {
+  margin-bottom: 1.2rem;
+}
+
+.strategy-left li strong{
+  color: white;
+}
+
+/* Right Column */
+.strategy-right {
+  flex: 0 0 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.strategy-image {
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 4 / 3; /* keeps nice proportions */
+  height: auto;
+  border: 1px solid #198190;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .strategy-container {
+    flex-direction: column;
+  }
+
+  .strategy-left,
+  .strategy-right {
+    flex: 1 1 100%;
+  }
+
+  .section-heading h2 {
+    font-size: 2.2rem;
+  }
+
+  .strategy-left ul {
+    font-size: 1rem;
+  }
+
+  .strategy-image {
+    width: 100%;
+    height: auto;
+  }
+}

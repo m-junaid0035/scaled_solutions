@@ -1,0 +1,12 @@
+{
+  "NavBar": {
+    "link_1": "services",
+    "link_2": "ventriloc",
+    "link_3": "contact",
+    "link_4": "en",
+    "buttonContact": "Contact us"
+  },
+  "NameInTap": {
+    "Name": "ventriloc - We turn data into value"
+  }
+}
